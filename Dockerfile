@@ -2,7 +2,7 @@ FROM composer:latest
 
 RUN install-php-extensions ast;
 
-RUN composer global require felixfbecker/language-server && \
+RUN #composer global require felixfbecker/language-server && \
     composer global require friendsofphp/php-cs-fixer && \
     composer global require phan/phan && \
     composer global require phpmd/phpmd && \
