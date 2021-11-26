@@ -17,5 +17,4 @@ ENV PATH="/tmp/vendor/bin:${PATH}"
 # intelephense
 # https://github.com/bmewburn/intelephense-docs/blob/master/installation.md
 RUN apk add --update nodejs npm && \
-    apk add --update npm && \
     npm i intelephense -g
