@@ -1,11 +1,9 @@
 #!/bin/bash
 
-exec docker run \
+docker run \
     --network=host \
     --rm \
     -v $(pwd):$(pwd) \
     -w $(pwd) \
-    phphil \
+    phillaf/phphil \
     php "$@"
-
-exit $?

@@ -6,7 +6,7 @@ exec docker run \
     -it \
     -v $(pwd):$(pwd) \
     -w $(pwd) \
-    phphil \
+    phillaf/phphil \
     composer "$@"
 
 exit $?

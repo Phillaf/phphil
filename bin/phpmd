@@ -5,7 +5,7 @@ exec docker run \
     --rm \
     -v $(pwd):$(pwd) \
     -w $(pwd) \
-    phphil \
+    phillaf/phphil \
     phpmd "$@"
 
 exit $?
